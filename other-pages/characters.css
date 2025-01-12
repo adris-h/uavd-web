@@ -1,0 +1,185 @@
+@import url(../fonts.css);
+
+
+body{
+    background-color:  #e7e2d8; 
+
+    color: #dd0937;
+    font-family: Garet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+body {
+    position: relative;
+    z-index: 1;
+  }
+  
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: .1; 
+    z-index: -1;
+    
+  }
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100vw;
+}
+
+.wrapper h3{
+    margin: 0;
+    text-align: left;
+    width: 80%;
+}
+
+.characters{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 80%;
+}
+
+.characters div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border: solid #dd0937 1px;
+    height: 50vh;
+    width: 30%;
+    transition: 300ms;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    cursor: pointer;
+    
+}
+
+.characters div h4{
+    text-shadow: 1px 1px 1px #050505ab;
+    color: #ffffff;
+    filter: none;
+    font-size: 1.2rem;
+}
+
+.characters div:hover{
+    filter: none;
+    background-size: 700px;
+}
+
+.evelyn-variants div:nth-child(1){
+    background-image: url(../img/prime-evelyn.avif);
+    background-position: center;
+    background-size: 800px;
+}
+
+.evelyn-variants div:nth-child(2){
+    background-image: url(../img/dominatrix-evelyn.webp);
+    background-position: center;
+    background-size: 600px;
+}
+.evelyn-variants div:nth-child(3){
+    background-image: url(../img/rock-evelyn.jpeg);
+    background-position: left 88% bottom 0%;
+    background-size: 550px;
+}
+
+.evelyn-variants div:nth-child(4){
+    background-image: url(../img/movie-star-evelyn.jpeg);
+    background-position: center;
+    background-size: 800px;
+}
+
+.evelyn-variants div:nth-child(5){
+    background-image: url(../img/hot-dog-fingers-evelyn.webp);
+    background-position: center;
+    background-size: 700px;
+}
+
+.evelyn-variants div:nth-child(6){
+    background-image: url(../img/hibachi-chef-evelyn.jpeg);
+    background-position: center;
+    background-size: 400px;
+}
+
+.waymond-variants div:nth-child(1){
+    background-image: url(../img/alpha-waymond.avif);
+    background-position: center;
+    background-size: cover;
+}
+.waymond-variants div:nth-child(2){
+    background-image: url(../img/ceo-waymond.avif);
+    background-position: -10rem;
+    background-size: cover;
+}
+.waymond-variants div:nth-child(3){
+    background-image: url(../img/waymond.avif);
+    background-position: -5rem;
+    background-size: cover;
+}
+
+.joy-variants div:nth-child(1){
+    background-image: url(../img/joy.avif);
+    background-position: -10rem;
+    background-size: cover;
+}
+.joy-variants div:nth-child(2){
+    background-image: url(../img/jobu-tupaki.webp);
+    background-position: -5rem;
+    background-size: cover;
+}
+
+
+
+h1{
+    margin-bottom: -1.5rem;
+}
+
+
+a{
+    position: fixed;
+    text-decoration: none;
+    color: #dd0937;
+    text-align: left;
+    width: 90%;
+    top: 4rem;
+    
+}
+
+strong{
+    position: relative;
+    display: inline-block;
+}
+
+strong::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: #dd0937;
+    border-radius: 10px;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s ease;
+    
+}
+
+strong:hover::after{
+    width: 100%;
+}
+
+
+

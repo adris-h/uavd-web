@@ -1,0 +1,286 @@
+
+.s_body{
+    height: 4000px;
+
+    section{
+        border-bottom: $everythinf solid 1px;
+    }
+}
+
+.section-gif{
+    background-image: url(../img/just-be-a-rock.png);
+    height: 200vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -5rem;
+    position: relative;
+
+   
+
+
+    div{
+        margin-top: 25vh;
+        width: 100%;
+        left: 0;
+        p{
+            margin: 0;
+            padding-left: 4rem;
+            color: black;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            width: 100%;
+        }
+        p:nth-child(2){
+            font-size: 5.25rem;
+            line-height: 5rem;
+        }
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-image: url(../img/a-rock.png);
+        background-repeat: no-repeat;
+        background-position: -4.7rem -7.5rem;
+    
+    }
+}
+
+#section-gif    {
+    
+    width: 100%;
+    height: auto;
+
+    .story-part{
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $everythinf;
+        font-size: 3rem;
+    }
+
+    .story{
+        width: 90%;
+        height: 80vh;
+
+        .top{
+            height: 50%;
+            width: 100%;
+            display: flex;
+
+            .movie-img{
+                height: 100%;
+                width: 50%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .movie-summary{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $everythinf;
+                color: $background;
+                p{
+                    padding: 2rem;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    
+    
+}
+
+#s_hero-section {
+    background-color: $everythinf;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > div {
+        border-color: $background;
+        border-right: $background 1px solid;
+        border-left: $background 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 90%;
+        height: 100%;
+        
+        p {
+            color: $background;
+            font-style: italic;
+        }
+    
+        .s-quote {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            position: relative;
+    
+            img {
+                position: absolute;
+                width: 3rem;
+                opacity: 0; /* Initially invisible */
+                animation: rotateAndPosition 3s ease-in-out forwards;
+                animation-delay: 0s; /* Default delay */
+            }
+    
+            img:nth-child(1) {
+                top: 50%;
+                left: 10%;
+                animation-delay: 0s;
+                transform: rotate(0deg);
+            }
+    
+            img:nth-child(2) {
+                top: 40%;
+                left: 30%;
+                animation-delay: 0.5s;
+                transform: rotate(45deg);
+            }
+    
+            img:nth-child(3) {
+                top: 60%;
+                left: 65%;
+                animation-delay: 1s;
+                transform: rotate(90deg);
+            }
+    
+            img:nth-child(4) {
+                top: 20%;
+                left: 50%;
+                animation-delay: 1.5s;
+                transform: rotate(135deg);
+            }
+    
+            img:nth-child(5) {
+                top: 70%;
+                left: 70%;
+                animation-delay: 2s;
+                transform: rotate(180deg);
+            }
+    
+            img:nth-child(6) {
+                top: 10%;
+                left: 15%;
+                animation-delay: 2.5s;
+                transform: rotate(225deg);
+            }
+    
+            img:nth-child(7) {
+                top: 25%;
+                left: 80%;
+                animation-delay: 3s;
+                transform: rotate(270deg);
+            }
+    
+            img:nth-child(8) {
+                top: 80%;
+                left: 20%;
+                animation-delay: 3.5s;
+                transform: rotate(315deg);
+            }
+    
+            img:nth-child(9) {
+                top: 90%;
+                left: 90%;
+                animation-delay: 4s;
+                transform: rotate(360deg);
+            }
+    
+            img:nth-child(10) {
+                top: 10%;
+                left: 60%;
+                animation-delay: 4.5s;
+                transform: rotate(405deg);
+            }
+    
+            img:nth-child(11) {
+                top: 80%;
+                left: 50%;
+                animation-delay: 5s;
+                transform: rotate(450deg);
+            }
+        }
+    }
+    
+    /* Define the keyframe animation for both rotation and positioning */
+    @keyframes rotateAndPosition {
+        0% {
+            opacity: 0; /* Start invisible */
+            rotate: 0deg;
+        }
+        50% {
+            opacity: 1; /* Fade in */
+            rotate: 360deg; /* Full 2 rotations */
+        }
+        100% {
+            opacity: 1; /* Keep fully visible */
+            rotate: 180deg; /* Final rotation */
+        }
+    }
+}
+
+#gallery-section{
+    height: 100vh;
+    
+
+    & > div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .gallery-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        object-fit: cover;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    
+    
+    .arrow-left, .arrow-right {
+        position: absolute;
+        top: 50%;
+        font-size: 2em;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        cursor: pointer;
+        user-select: none;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+    
+    .arrow-left {
+        left: 10px;
+    }
+    
+    .arrow-right {
+        right: 10px;
+    }
+}

@@ -1,0 +1,115 @@
+.s_hero-section {
+  background-image: url(../img/just-be-a-rock.png);
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -5rem;
+}
+.s_hero-section div {
+  margin-top: 25vh;
+  width: 100%;
+  left: 0;
+}
+.s_hero-section div p {
+  margin: 0;
+  padding-left: 4rem;
+  color: black;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+.s_hero-section div p:nth-child(2) {
+  font-size: 5.25rem;
+  line-height: 5rem;
+}
+.s_hero-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url(../img/a-rock.png);
+  background-repeat: no-repeat;
+  background-position: -4.7rem -7.5rem;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  width: 20vw;
+  height: 100vh;
+  z-index: 1000000;
+  border-left: solid rgba(255, 255, 255, 0) 1px;
+  transform: translateX(73%);
+}
+nav .nav-content {
+  visibility: hidden;
+  opacity: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav .nav-content ul {
+  list-style: none;
+  font-size: 2rem;
+}
+nav .nav-content ul a {
+  font-family: Garet;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  font-weight: 100;
+}
+nav .nav-content ul a:hover {
+  color: white;
+}
+nav .n-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  background-color: transparent;
+  width: 3rem;
+  height: 2rem;
+  border: none;
+  margin: 1rem;
+  color: white;
+  z-index: 1;
+}
+nav .n-button span {
+  width: 20px;
+  height: 1px;
+  background-color: white;
+}
+nav .n-button:hover {
+  color: white;
+  cursor: pointer;
+}
+nav .n-button:hover span {
+  background-color: white;
+}
+nav .n-button.active {
+  color: white;
+  cursor: pointer;
+}
+nav .n-button.active span {
+  background-color: white;
+}
+nav .n-button.active span:nth-child(1) {
+  transform: translate(0, 6px) rotate(45deg);
+}
+nav .n-button.active span:nth-child(2) {
+  transform: translate(0, 0) rotate(-45deg);
+}
+
+nav.active {
+  transform: translateX(0);
+  border-left: solid rgba(255, 255, 255, 0.113) 1px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(4.6px);
+}
+nav.active .nav-content {
+  visibility: visible;
+  opacity: 1;
+}/*# sourceMappingURL=story.css.map */
